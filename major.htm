@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/major.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://ldavis-b83d.restdb.io/rest/_jsapi.js"></script>
+    <meta HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="https://unpkg.com/tesseract.js@v2.0.0-beta.1/dist/tesseract.min.js"></script>
+</head>
+
+<body>
+    <div id="phoneScreen">
+        <div id="loginPage">
+            <div id="loginLogo" class="logo"></div>
+            <input id="userName" placeholder="username"></input>
+            <input id="password" placeholder="password"></input>
+            <button id="btnLogin" class="button">Login</button>
+            <button id="btnSignUp" class ="button">Sign Up</button>
+            <div id="userNameTaken">That usernmane has been taken, please select another.</div>
+        </div>
+        <div id="startPage">
+            <div id="logoStart" class="logo"></div>
+            <text id="txtWelcome" >Welcome back + user's name</text>
+            <button id="btnUserHub" class="button">User hub</button>
+            <button id="btnScannerPage" class="button">Scanner</button>
+        </div>
+        <div id="scannerScreen">
+            <div id="btnScannerBack" class="back">Back</div>
+            <!--<video id="camForScan" width="320px"></video>-->
+            <!--<div id="scanCam">Scan cam</div>-->
+            <!--<div id="btnScan">button for scan</div>-->
+            <video id="player" controls></video>
+            <button id="capture">Capture</button>
+            <canvas id="snapshot" width="200" height="150"></canvas>
+            <textarea id="result" style="width:270px;height:100px;"></textarea>
+        </div>
+        <div id="userHub">
+            <div id="btnUserBack" class="back">Back</div>
+            <div id="profileName">Profile Name</div>
+            <div id="irritantList">list of irrants according to the user</div>
+            <button id="btnIrritantEdit">Edit irritants</button>
+            <!--<div id="History">History list</div>-->
+        </div>
+        <div id="irritantLog">
+            <div id="btnLogBack" class="back">Back</div>
+            <div id="searchBar">Search box</div>
+            <div id="dataBase">List of items in the database</div>
+        </div>
+        <div id ="scanResults">
+            <div id="btnResultsBack" class="back">Back</div>
+            <text id="txtResults"></text>
+            <div id="results"></div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="js/major.js"></script>
