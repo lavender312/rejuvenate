@@ -22,7 +22,7 @@ function login() {
     $("#loginPage").hide();
     $("#startPage").show();
 };
-$('#btnLogin').click(function () {
+$('#btnSignUp').click(function () {
     login();
 });
 
