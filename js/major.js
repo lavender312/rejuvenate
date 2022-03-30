@@ -18,13 +18,13 @@ $('#userNameTaken').hide();
 //linking pages
 //forward 
 //log in stub
-/*function login() {
+function login() {
     $("#loginPage").hide();
     $("#startPage").show();
 };
 $('#btnLogin').click(function () {
     login();
-});*/
+});
 
 function changePage(button, pageStart, pageEnd) {
     $(button).click(function () {
@@ -124,7 +124,7 @@ var found = false;
 });*/
 
 //login through authfication
-
+/*
 var lock = new Auth0Lock(AUTH0_CLIENT_ID, AUTH0_DOMAIN, {
     auth: {
         params: { scope: 'openid email profile' },
@@ -174,7 +174,7 @@ function getIrritants(){
   $.getJSON('https://myapp-7175.restdb.io/rest/items', function(data){...});}
 /*
 
-  
+  /*
 
 //irritant log
 
