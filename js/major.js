@@ -1,6 +1,8 @@
 var api = '6237cbf0dced170e8c83a41d';
 var userUrl = 'https://ldavis-b83d.restdb.io/rest/majorlogins';
 var arrUsers = [''];
+const AUTH0_CLIENT_ID = "XXK1MFFk3DwMidOeqZuKJvYxuXXEnDR0";
+const AUTH0_DOMAIN = "lavenmajor.au.auth0.com";
 //var db = new restdb("6237cbf0dced170e8c83a41d", options);
 //var db = new restdb(api);
 //var majorlogins = "6237b460f088b11e000072b0"; 
@@ -16,16 +18,16 @@ $('#userNameTaken').hide();
 //linking pages
 //forward 
 //log in stub
-function login() {
+/*function login() {
     $("#loginPage").hide();
     $("#startPage").show();
 };
 $('#btnLogin').click(function () {
     login();
-});
+});*/
 
-function changePage(button, pageStart, pageEnd){
-    $(button).click(function(){
+function changePage(button, pageStart, pageEnd) {
+    $(button).click(function () {
         $(pageStart).hide();
         $(pageEnd).show();
     });
@@ -121,9 +123,58 @@ var found = false;
     }
 });*/
 
-//login through aurthincation
+//login through authfication
 
+var lock = new Auth0Lock(AUTH0_CLIENT_ID, AUTH0_DOMAIN, {
+    auth: {
+        params: { scope: 'openid email profile' },
+        configurationBaseUrl: 'https://cdn.auth0.com',
+        esponseType: 'token id_token'
+    }
+});
 
+$("#btnLogIn").click(
+    function (e) {
+        e.preventDefault();
+        lock.show();
+        return false;
+    }
+);
+
+lock.on("authenticated", function(authResult) {
+    lock.getProfile(authResult.accessToken, function(error, profile) {
+      if (error) {
+          // TODO: Handle error
+          console.log("Auth0 getProfile failed", error);
+          return;
+      }
+                  
+      localStorage.setItem('id_token', authResult.idToken);
+  
+      // Display user information
+      show_profile_info(profile);
+  
+      // global ajax Authorization setup
+      $.ajaxPrefilter(function( options ) {
+          if ( !options.beforeSend) {
+              options.beforeSend = function (xhr) { 
+                  xhr.setRequestHeader('Authorization', 'Bearer ' + localStorage.getItem('id_token'));
+              }
+          }
+      });
+  
+      // get task items from database
+      getIrritants();
+    });
+});
+
+/* change item stuff to irritant stuff
+// get tasks from database
+function getIrritants(){
+  $.getJSON('https://myapp-7175.restdb.io/rest/items', function(data){...});}
+/*
+
+  
 
 //irritant log
 
@@ -151,16 +202,16 @@ const captureButton = document.getElementById('capture')
 const result = document.getElementById('result')
 
 navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
-  player.srcObject = stream
+    player.srcObject = stream
 })
 
-captureButton.addEventListener('click', function() {
-  const context = snapshot.getContext('2d')
-  context.drawImage(player, 0, 0, snapshotZone.width, snapshotZone.height)
-  // Tesseract.recognize(snapshotZone, 'jpn', { logger: m => console.log(m) }) // 日本語
-  Tesseract.recognize(snapshotZone, 'eng', { logger: m => console.log(m) }) // 英語
-    .then(({ data: { text } }) => {
-    result.value = text
-  })
-  //$("#snapshot").hide();
+captureButton.addEventListener('click', function () {
+    const context = snapshot.getContext('2d')
+    context.drawImage(player, 0, 0, snapshotZone.width, snapshotZone.height)
+    // Tesseract.recognize(snapshotZone, 'jpn', { logger: m => console.log(m) }) // 日本語
+    Tesseract.recognize(snapshotZone, 'eng', { logger: m => console.log(m) }) // 英語
+        .then(({ data: { text } }) => {
+            result.value = text
+        })
+    //$("#snapshot").hide();
 })
