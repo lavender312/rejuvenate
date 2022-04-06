@@ -1,143 +1,171 @@
-#phoneScreen{
+#phoneScreen {
     width: 414px;
     height: 97vh;
     border: 1px solid black;
     position: absolute;
-    font-family:monospace;
+    font-family: monospace;
 }
-button{
-    cursor:pointer;
+
+button {
+    cursor: pointer;
     background-color: pink;
-    padding:5px;
+    padding: 5px;
     border-radius: 20px;
     position: absolute;
-    top: 50px; 
-    font-family:monospace; 
+    top: 50px;
+    font-family: monospace;
 }
-.logo{
-    position:absolute;
-    background-size:cover;
+
+.logo {
+    position: absolute;
+    background-size: cover;
     background-image: url("../images/revuivinate.png");
-    font-family:monospace;
+    font-family: monospace;
     border-radius: 20px;
 }
-.back{
+
+.back {
     top: 10px;
     left: 10px;
     position: absolute;
-    cursor:pointer;
+    cursor: pointer;
 }
-#loginLogo{
+
+#loginLogo {
     left: 24%;
     top: 100px;
     width: 200px;
     height: 200px;
 }
-#btnSignUp{
+
+#btnSignUp {
     left: 32%;
     top: 380px;
     position: absolute;
 }
-#btnLogin{
+
+#btnLogin {
     left: 42%;
     top: 340px;
     position: absolute;
 }
-#userName{
+
+#userName {
     top: 310px;
     left: 30%;
-    position:absolute;
+    position: absolute;
 }
-#password{
-    top:340px;
-    left:30%;
-    position:absolute;
+
+#password {
+    top: 340px;
+    left: 30%;
+    position: absolute;
 }
-#logoStart{
+
+#logoStart {
     width: 150px;
     height: 150px;
     left: 30%;
     top: 110px;
 }
-#txtWelcome{
+
+#txtWelcome {
     top: 260px;
-    left:20%;
+    left: 20%;
     position: absolute;
-    font-size:large;
+    font-size: large;
 }
-#btnUserHub{
+
+#btnUserHub {
     top: 310px;
     left: 35%;
     padding: 15px;
 }
-#btnScannerPage{
-    top:380px;
+
+#btnScannerPage {
+    top: 380px;
     left: 36%;
     padding: 15px;
 }
-#player{
-    top:20%;
-    left:15%;
+
+#player {
+    top: 20%;
+    left: 15%;
     width: 270px;
-    height:270px;
-    position:absolute;
+    height: 270px;
+    position: absolute;
 }
-#result{
+
+#result {
     left: 15%;
     top: 70%;
     position: absolute;
 }
-#capture{
-    left:40%;
-    top:63%;
+
+#capture {
+    left: 40%;
+    top: 63%;
 }
-#profileName{
+
+#profileName {
     left: 35%;
     top: 25%;
     position: absolute;
 }
-#irritantList{
+
+#irritantList {
     left: 25%;
     top: 40%;
     width: 200px;
     height: 150px;
     position: absolute;
-    background-color:pink;
+    background-color: pink;
 }
-#btnIrritantEdit{
+
+#btnIrritantEdit {
     left: 35%;
     top: 70%;
 }
-#welcomeRay{
-    left:40%;
+
+#welcomeRay {
+    left: 40%;
     top: 300px;
     background-color: pink;
 }
-.thank-you{
+
+.thank-you {
     font-size: 16px;
-    padding: 20px;	
-  }
-  #irritants-form{
+    padding: 20px;
+}
+
+#irritants-form {
     padding: 10px;
-  }
-  #irritants-form input,  #irritants-form select{
+}
+
+#irritants-form input,
+#irritants-form select {
     width: 300px;
-  }
-  label{
+}
+
+label {
     display: block;
-  }
-  .form-control{
+}
+
+.form-control {
     width: auto;
-  }
-  .help-block{
-    margin-left:10px;
-  }
-  .progress{
+}
+
+.help-block {
+    margin-left: 10px;
+}
+
+.progress {
     width: 300px;
-    height:10px;
-    border-radius:0px;
+    height: 10px;
+    border-radius: 0px;
     margin-top: 2px;
-  }
-  #btn-submit{
-      width: 300px;
-  }
+}
+
+#btn-submit {
+    width: 300px;
+}
