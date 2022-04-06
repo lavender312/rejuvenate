@@ -130,6 +130,7 @@ button {
 #welcomeRay {
     left: 40%;
     top: 300px;
+    position: absolute;
     background-color: pink;
 }
 
@@ -140,11 +141,17 @@ button {
 
 #irritants-form {
     padding: 10px;
+    top: 20%;
+    left: 20%;
+    position:absolute;
 }
 
 #irritants-form input,
 #irritants-form select {
     width: 300px;
+    top:80px;
+    left: 20%;
+    position:absolute;
 }
 
 label {
@@ -168,4 +175,7 @@ label {
 
 #btn-submit {
     width: 300px;
+    left: 20%;
+    top:220px;
+    position:absolute;
 }
