@@ -148,14 +148,14 @@ button {
     width: 300px;
     position:absolute;
 }
+
 #irritants-form input{
     left: 12%;
 }
+
 #irritants-form select{
     left: 10%;
 }
-
-
 
 label {
     display: block;
@@ -180,5 +180,23 @@ label {
     width: 300px;
     left: 20%;
     top:220px;
+    position:absolute;
+}
+
+#User{
+    left: 20%;
+    top:200px;
+    position:absolute;
+}
+
+#Ingredient{
+    left: 15%;
+    top: 220px;
+    position:absolute;
+}
+
+.form-control{
+    left: 15%;
+    top: 300px;
     position:absolute;
 }
