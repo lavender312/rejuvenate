@@ -40,92 +40,10 @@ changePage("#btnIrritantEdit", "#userHub", "#irritantLog");
 changePage("#btnScannerBack", "#scannerScreen", "#startPage");
 changePage("#btnUserBack", "#userHub", "#startPage")
 
-//Login process (first attempt)
 
-/*function addUser(item, url, apikey) {
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": url,
-        "method": "POST",
-        "headers": {
-            "content-type": "application/json",
-            "x-apikey": apikey,
-            "cache-control": "no-cache"
-        },
-        "processData": false,
-        "data": JSON.stringify(item)
-    }
-
-    $.ajax(settings).done(function (response) {
-        console.log('Item successfully added');
-        console.log(response);
-    });
-}
-
-function getUser(url, apikey) {
-    var serviceURL = url;
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": serviceURL,
-        "method": "GET",
-        "headers": {
-            "content-type": "application/json",
-            "x-apikey": apikey,
-            "cache-control": "no-cache"
-        }
-    }
-    $.ajax(settings).done(function (response) {
-        console.log('Item successfully retrieved');
-        console.log(response);
-        arrUser = response;
-    });
-
-}
-getUser(userUrl, api);*/
-
-/*$("#btnSignUp").click(function () {
-    var found = false;
-    var username = $('#userName').val();
-    var userLogin = {
-        "Username": $('#userName').val(),
-        "Password": $('#password').val()
-    }
-    console.log(arrUsers);
-    var query = {}; // get all records
-    var hints = { "$max": 10000, "$orderby": { "_id": -1 } }; // top ten, sort by creation id in descending order
-    db.majorlogins.find(query, hints, function (err, res) {
-        if (!err) {
-            // res is an array of majorlogins instances
-            for (i = 0; i < res.length - 1; i++) {
-                console.log(res);
-                if (res[i].Username == username) {
-                    console.log('bad');
-                    found = true;
-                }
-            }
-        }
-    });
-    if (found == false) {
-        addUser(userLogin, userUrl, api);
-        console.log(arrUsers);
-    } else {
-        $("#userNameTaken").show();
-    }
-})*/
-
-
-/*$("#btnSignUp").click(function () {
-var found = false;
-    while (found = false){
-
-    }
-});*/
-
-//login through authfication
+//login through authfication -- need to access connection between Auth0, restDB and Github 
 // Google and standalone authentication using Auth0 integration with restdb.io
-
+/*
 $(function () {
     const AUTH0_CLIENT_ID = "XXK1MFFk3DwMidOeqZuKJvYxuXXEnDR0";
     const AUTH0_DOMAIN = "lavenmajor.au.auth0.com";
@@ -228,7 +146,7 @@ $(function () {
 
 //irritant log
 
-
+*/
 
 //Scanner
 /*function cameraActivate() {
