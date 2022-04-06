@@ -176,10 +176,10 @@ navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
 captureButton.addEventListener('click', function () {
     const context = snapshot.getContext('2d')
     context.drawImage(player, 0, 0, snapshotZone.width, snapshotZone.height)
-    // Tesseract.recognize(snapshotZone, 'jpn', { logger: m => console.log(m) }) // 日本語
-    Tesseract.recognize(snapshotZone, 'eng', { logger: m => console.log(m) }) // 英語
-        .then(({ data: { text } }) => {
-            result.value = text
+    Tesseract.recognize(snapshotZone, 'eng', { logger: m => console.log(m) }) 
+        .then(({ data: { words } }) => {
+            result.value = words
+            console.log(result.value);
         })
     //$("#snapshot").hide();
 })
