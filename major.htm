@@ -48,9 +48,24 @@
             <!--<div id="History">History list</div>-->
         </div>
         <div id="irritantLog">
-            <div id="btnLogBack" class="back">Back</div>
-            <div id="searchBar">Search box</div>
-            <div id="dataBase">List of items in the database</div>
+            <form role="form" id="irritants-form">
+                <div class="form-group">
+                  <label>User:</label>
+                  <select id="User" class="form-control"  name="User" data-type="majorlogins"  >
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Ingredient:</label>
+                  <select id="Ingredient" class="form-control"  name="Ingredient" data-type="inci-list"  >
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Reaction: </label><input class="form-control" name="Reaction" data-type="bool" type="checkbox">
+                </div>
+                
+                  <div id="fg-errors" class="form-group">
+                  </div>
+                  <button class="btn btn-primary btn-lg" id="btn-submit" type="submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Submitting...">Submit</button></form>
         </div>
         <div id ="scanResults">
             <div id="btnResultsBack" class="back">Back</div>
