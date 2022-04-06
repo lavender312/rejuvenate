@@ -457,4 +457,4 @@ $(function () {
         return false;
     });
 });
-changePage("#irritants-form", "#irritantsLog", "#userHub")
+changePage("#irritants-form", "#irritantLog", "#userHub")
