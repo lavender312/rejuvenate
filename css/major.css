@@ -145,14 +145,12 @@ button {
 
   #irritants-form input,  #irritants-form select{
     width: 300px;
+    left: 30px;
+    height:auto;
   }
 
   label{
     display: block;
-  }
-
-  .form-control{
-    width: auto;
   }
 
   .help-block{
@@ -186,4 +184,5 @@ button {
     left: 15%;
     top: 300px;
     position:absolute;
+    width: auto;
 }
