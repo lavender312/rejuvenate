@@ -178,8 +178,10 @@ captureButton.addEventListener('click', function () {
     context.drawImage(player, 0, 0, snapshotZone.width, snapshotZone.height)
     Tesseract.recognize(snapshotZone, 'eng', { logger: m => console.log(m) }) 
         .then(({ data: { words } }) => {
-            result.value = words
-            console.log(words);
+            result.value = text
+            console.log(text);
+            //var result = text
         })
     //$("#snapshot").hide();
 })
+
