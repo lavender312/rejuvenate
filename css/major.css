@@ -128,7 +128,7 @@ button {
 }
 
 #welcomeRay {
-    left: 30%;
+    left: 35%;
     top: 300px;
     position: absolute;
     background-color: pink;
@@ -165,7 +165,7 @@ button {
     border-radius:0px;
     margin-top: 2px;
   }
-  
+
   #btn-submit{
       width: 300px;
   }
