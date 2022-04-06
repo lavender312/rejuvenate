@@ -146,7 +146,8 @@ button {
   #irritants-form input,  #irritants-form select{
     width: 300px;
     left: 30px;
-    height:auto;
+    top: 80px;
+    position:absolute;
   }
 
   label{
