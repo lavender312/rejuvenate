@@ -134,54 +134,41 @@ button {
     background-color: pink;
 }
 
-.thank-you {
+.thank-you{
     font-size: 16px;
-    padding: 20px;
-}
+    padding: 20px;	
+  }
 
-#irritants-form {
+  #irritants-form{
     padding: 10px;
-}
+  }
 
-#irritants-form input,
-#irritants-form select {
+  #irritants-form input,  #irritants-form select{
     width: 300px;
-    position:absolute;
-}
+  }
 
-#irritants-form input{
-    left: 12%;
-}
-
-#irritants-form select{
-    left: 10%;
-}
-
-label {
+  label{
     display: block;
-}
+  }
 
-.form-control {
+  .form-control{
     width: auto;
-}
+  }
 
-.help-block {
-    margin-left: 10px;
-}
+  .help-block{
+    margin-left:10px;
+  }
 
-.progress {
+  .progress{
     width: 300px;
-    height: 10px;
-    border-radius: 0px;
+    height:10px;
+    border-radius:0px;
     margin-top: 2px;
-}
-
-#btn-submit {
-    width: 300px;
-    left: 20%;
-    top:220px;
-    position:absolute;
-}
+  }
+  
+  #btn-submit{
+      width: 300px;
+  }
 
 #User{
     left: 20%;
