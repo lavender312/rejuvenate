@@ -141,18 +141,21 @@ button {
 
 #irritants-form {
     padding: 10px;
-    top: 20%;
-    left: 15%;
-    position:absolute;
 }
 
 #irritants-form input,
 #irritants-form select {
     width: 300px;
-    top:80px;
-    left: 20%;
     position:absolute;
 }
+#irritants-form input{
+    left: 12%;
+}
+#irritants-form select{
+    left: 10%;
+}
+
+
 
 label {
     display: block;
