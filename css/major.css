@@ -39,8 +39,8 @@ button{
     position: absolute;
 }
 #btnLogin{
-    left: 49%;
-    top: 380px;
+    left: 42%;
+    top: 340px;
     position: absolute;
 }
 #userName{
@@ -108,7 +108,7 @@ button{
     left: 35%;
     top: 70%;
 }
-#welcome{
+#welcomeRay{
     left:40%;
-    top: 240px;
+    top: 300px;
 }
