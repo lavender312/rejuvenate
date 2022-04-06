@@ -207,7 +207,7 @@ $(function () {
 
     var successMessage = "Thank you!";
 
-   // $.datetimepicker.setLocale('en');
+   $.datetimepicker.setLocale('en');
 
     if (!Modernizr.inputtypes.datetime) {
         $("input[data-type=date]").datetimepicker({ timepicker: false, format: "Y/m/d" }).attr("type", "text");
