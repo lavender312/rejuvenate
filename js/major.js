@@ -179,7 +179,7 @@ captureButton.addEventListener('click', function () {
     Tesseract.recognize(snapshotZone, 'eng', { logger: m => console.log(m) }) 
         .then(({ data: { words } }) => {
             result.value = words
-            console.log(result.value);
+            console.log(words);
         })
     //$("#snapshot").hide();
 })
