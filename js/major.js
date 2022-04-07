@@ -272,10 +272,8 @@ $(function () {
             });
     }
 
-    // remember to add web api key for this collection too (or use a universal /** key)
     populateLookupSelect({ collection: "majorlogins", apikey: api, fieldname: "User", selectfield: "email address" });
 
-    // remember to add web api key for this collection too (or use a universal /** key)
     populateLookupSelect({ collection: "inci-list", apikey: api, fieldname: "Ingredient", selectfield: "INCI name" });
 
     function uploadAttachment(item) {
@@ -296,8 +294,7 @@ $(function () {
             }
         });
 
-        // check max upload file size for development plan
-        if (totalsize <= 1000000) {
+        if (totalsize <= 10000) {
             _.each(files_to_upload, function (file) {
                 formData.append(element_name, file, file.name);
             });
