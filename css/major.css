@@ -172,6 +172,7 @@ button {
 #User{
     top:200px;
 }
+
 #userID{
     top:180px;
 }
@@ -179,6 +180,18 @@ button {
 #Ingredient{
     top: 220px;
 }
+
 #ingredientID{
     top:200px;
+}
+
+#irritantLog{
+    width: 414px;
+    height: 97vh;
+    border: 1px solid black;
+    position: absolute;
+}
+
+#btn-submit{
+    top:240px;
 }
