@@ -141,6 +141,8 @@ button {
 
   #irritants-form{
     padding: 10px;
+    left: 20%;
+    position: absolute;
   }
 
   #irritants-form input,  #irritants-form select{
@@ -170,12 +172,13 @@ button {
 #User{
     top:200px;
 }
+#userID{
+    top:180px;
+}
 
 #Ingredient{
     top: 220px;
 }
-
-#irritantLog{
-    left: 20%;
-    position: absolute;
+#ingredientID{
+    top:200px;
 }
